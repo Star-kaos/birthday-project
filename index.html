@@ -9,36 +9,85 @@ body {
   background: linear-gradient(blue, #66c2ff, #ffcccc, #ffeee6);
 
 }
+/*
+#string2 {
+  width: 3px;
+  height: 120px;
+  margin: 500px auto;
+  position: relative;
+  border-radius: 50%;
+  background-color: lightblue;
+  animation-name: string2;
+  animation-duration: 20s;
+  animation-iteration-count: 3;
+  bottom: 100px;
+}
 
+@keyframes string2 {
+  0% {
+    bottom: 90px;
+  }
+   50% {
+     bottom: 235%;
+   }
+   100% {
+     bottom: 400%;
+   }
+ }
+
+  #ball2 {
+    width: 100px;
+    height: 120px;
+    margin: 500px auto;
+    position: relative;
+    border-radius: 50%;
+    background-color: lightblue;
+    animation-name: fly2;
+    animation-duration: 20s;
+    animation-iteration-count: 3;
+  }
+
+  @keyframes fly2 {
+   0% {
+     bottom: 0%;
+   }
+    50% {
+      bottom: 150%;
+    }
+    100% {
+      bottom: 200%;
+    }
+  }
+*/
 #string {
   width: 3px;
   height: 120px;
-  margin: 50px auto;
+  margin: 500px auto;
   position: relative;
   border-radius: 50%;
   background-color: lightblue;
   animation-name: string;
   animation-duration: 20s;
   animation-iteration-count: 3;
-  bottom: 100px;
+  bottom: 1000px;
 }
 
 @keyframes string {
   0% {
-    bottom: 100px;
+    bottom: 90%;
   }
    50% {
-     bottom: 100%;
+     bottom: 235%;
    }
    100% {
-     bottom: 100%;
+     bottom: 400%;
    }
  }
 
   #ball {
     width: 100px;
     height: 120px;
-    margin: 50px auto;
+    margin: 500px auto;
     position: relative;
     border-radius: 50%;
     background-color: lightblue;
@@ -52,10 +101,10 @@ body {
      bottom: 0%;
    }
     50% {
-      bottom: 100%;
+      bottom: 150%;
     }
     100% {
-      bottom: 100%;
+      bottom: 200%;
     }
   }
 
@@ -63,19 +112,40 @@ body {
     font-family: 'Bungee', cursive;
   }
 
-  .sun {
+  #sun {
     width: 100px;
     height: 100px;
     background-color: orange;
     border-radius: 110%;
     margin: 50px;
+    position: relative;
+    animation-name: up;
+    animation-duration: 50s;
+    animation-iteration-count: 3;
   }
 
+  @keyframes up {
+   0% {
+     bottom: 0%;
+     left: 0%;
+   }
+    50% {
+      bottom: 20%;
+      left: 100%
+    }
+    100% {
+      bottom: 40%;
+      left: 200%;
+    }
+  }
+
+
 </style>
-<div class="sun"></div>
+<div id="sun"></div>
 <div id="ball"></div>
 <div id="string"></div>
 <h1>HAPPY BIRTHDAY!</h1>
-
+<div id="ball2"></div>
+<div id="string2"></div>
 </body>
 </html>
