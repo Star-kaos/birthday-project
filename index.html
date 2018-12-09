@@ -1,0 +1,81 @@
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+</head>
+<body>
+<style>
+
+body {
+  background: linear-gradient(blue, #66c2ff, #ffcccc, #ffeee6);
+
+}
+
+#string {
+  width: 3px;
+  height: 120px;
+  margin: 50px auto;
+  position: relative;
+  border-radius: 50%;
+  background-color: lightblue;
+  animation-name: string;
+  animation-duration: 20s;
+  animation-iteration-count: 3;
+  bottom: 100px;
+}
+
+@keyframes string {
+  0% {
+    bottom: 100px;
+  }
+   50% {
+     bottom: 100%;
+   }
+   100% {
+     bottom: 100%;
+   }
+ }
+
+  #ball {
+    width: 100px;
+    height: 120px;
+    margin: 50px auto;
+    position: relative;
+    border-radius: 50%;
+    background-color: lightblue;
+    animation-name: fly;
+    animation-duration: 20s;
+    animation-iteration-count: 3;
+  }
+
+  @keyframes fly {
+   0% {
+     bottom: 0%;
+   }
+    50% {
+      bottom: 100%;
+    }
+    100% {
+      bottom: 100%;
+    }
+  }
+
+  h1 {
+    font-family: 'Bungee', cursive;
+  }
+
+  .sun {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    border-radius: 110%;
+    margin: 50px;
+  }
+
+</style>
+<div class="sun"></div>
+<div id="ball"></div>
+<div id="string"></div>
+<h1>HAPPY BIRTHDAY!</h1>
+
+</body>
+</html>
